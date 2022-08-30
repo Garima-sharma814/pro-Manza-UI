@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Inter";
+    background-color: #212121;
+    color: white;
+}
+
+.mainSignBox {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoName {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.logoImg {
+    width: 66px;
+    height: 66px;
+}
+
+.regHeader {
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    box-sizing: border-box;
+    width: 440px;
+    height: 61px;
+    color: white;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 1rem;
+    margin: 20px 0 20px 0;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.pageDesc {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pageName {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24p
+}
+
+form>label {
+    width: 68px;
+    position: relative;
+    top: 28px;
+    left: -164px;
+    background-color: #212121;
+    font-size: 12px;
+}
+
+.formBtn {
+    width: 440px;
+    height: 61px;
+    background: #BB86FC;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footerText {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+a {
+    color: #BB86FC;
+    text-decoration: underline;
+}
