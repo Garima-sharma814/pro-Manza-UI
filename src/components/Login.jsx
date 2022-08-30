@@ -8,7 +8,7 @@ const Login = () => {
             <div className="mainSignBox">
                 <Header pageName="Login" desc="Please login to continue" />
                 <form>
-                    <label> User Name </label>
+                    <label> Username </label>
                     <input type="text" name="" id="" placeholder="Enter your username" />
 
                     <label> Password </label>
