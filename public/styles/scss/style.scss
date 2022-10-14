@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+@import '_base.scss';
 
 body {
     box-sizing: border-box;
     text-align: center;
     font-family: "Inter";
-    background-color: #212121;
-    color: white;
+    background-color: $theme-black;
+    color: $theme-white;
 }
 
 .mainSignBox {
@@ -17,7 +17,7 @@ body {
 }
 
 .logoName {
-    color: white;
+    color: $theme-white;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -48,16 +48,16 @@ input {
     box-sizing: border-box;
     width: 440px;
     height: 61px;
-    color: white;
-    border: 1px solid #DEDEDE;
+    color: $theme-white;
+    border: 1px solid $theme-grey;
     border-radius: 8px;
-    background-color: #212121;
+    background-color: $theme-black;
     padding: 1rem;
     margin: 20px 0 20px 0;
-}
 
-input::placeholder {
-    color: white;
+    &::placeholder {
+        color: $theme-white;
+    }
 }
 
 .pageDesc {
@@ -72,21 +72,23 @@ input::placeholder {
     line-height: 24p
 }
 
-form>label {
-    width: 68px;
-    position: relative;
-    top: 28px;
-    left: -164px;
-    background-color: #212121;
-    font-size: 12px;
+form {
+    >label {
+        width: 68px;
+        position: relative;
+        top: 28px;
+        left: -164px;
+        background-color: $theme-black;
+        font-size: 12px;
+    }
 }
 
 .formBtn {
     width: 440px;
     height: 61px;
-    background: #BB86FC;
+    background: $theme-purple;
     border-radius: 8px;
-    color: #FFFFFF;
+    color: $theme-white;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -101,10 +103,10 @@ form>label {
     font-size: 14px;
     line-height: 17px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: $theme-white;
 }
 
 a {
-    color: #BB86FC;
+    color: $theme-purple;
     text-decoration: underline;
 }
