@@ -1,23 +1,32 @@
-import React from "react";
-import Footer from './Footer';
-import Header from './Header';
+import React from 'react';
+import Footer from './partials/Footer';
+import Header from './partials/Header';
 
-const Login = () => {
-    return (
-        <>
-            <div className="mainSignBox">
-                <Header pageName="Login" desc="Please login to continue" />
-                <form>
-                    <label> Username </label>
-                    <input type="text" name="" id="" placeholder="Enter your username" />
+const Login = (props) => {
+  return (
+    <>
+      <div className="mainSignBox">
+        <Header />
 
-                    <label> Password </label>
-                    <input type="text" name="" id="" placeholder="Enter your password" />
-                </form>
-                <Footer buttonName="Sign in" />
-            </div>
-        </>
-    )
-}
+        <div className="">
+          <div className="pageName">Login</div>
+          <div className="pageDesc">Please Login to continue</div>
+        </div>
 
-export default Login
+        <form>
+          <label> Username </label>
+          <input type="text" name="" id="" placeholder="Enter your username" />
+
+          <label> Password </label>
+          <input type="text" name="" id="" placeholder="Enter your password" />
+          <button className="formBtn"> Sign in </button>
+        </form>
+
+        <Footer link="/signup" />
+      </div>
+    </>
+  );
+};
+
+export default Login;
+

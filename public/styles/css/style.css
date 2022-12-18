@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   box-sizing: border-box;
   text-align: center;
@@ -8,9 +13,11 @@ body {
 }
 
 .mainSignBox {
-  height: 95vh;
+  height: 100vh;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: center;
   flex-direction: column;
 }
@@ -43,7 +50,7 @@ form {
   flex-direction: column;
 }
 
-input {
+input, select {
   box-sizing: border-box;
   width: 440px;
   height: 61px;
@@ -54,8 +61,11 @@ input {
   padding: 1rem;
   margin: 20px 0 20px 0;
 }
-input::placeholder {
+input::placeholder, select::placeholder {
   color: #FFFFFF;
+}
+input:focus-visible, select:focus-visible {
+  outline: none;
 }
 
 .pageDesc {
